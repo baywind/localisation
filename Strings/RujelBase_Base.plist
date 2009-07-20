@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lessons</key>
+	<string>Уроки</string>
+	<key>lessonsTab</key>
+	<dict>
+		<key>title</key>
+		<string>уроки</string>
+		<key>hover</key>
+		<string>проведенные уроки</string>
+		<key>listPresenter</key>
+		<string>LessonList</string>
+		<key>id</key>
+		<string>lessonsTab</string>
+		<key>sort</key>
+		<string>05</string>
+		<key>entityName</key>
+		<string>BaseLesson</string>
+		<key>courseAttribute</key>
+		<string>course</string>
+		<key>presenter</key>
+		<string>NotePresenter</string>
+		<key>prefetchPaths</key>
+		<array>
+			<string>notes</string>
+			<string>taskText</string>
+		</array>
+	</dict>
+	<key>reportSettings</key>
+	<dict>
+		<key>title</key>
+		<string>lessons</string>
+		<key>name</key>
+		<string>Уроки</string>
+		<key>on</key>
+		<true/>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>flag</key>
+				<string>all</string>
+				<key>title</key>
+				<string>без оценок</string>
+				<key>on</key>
+				<false/>
+			</dict>
+		</array>
+		<key>sort</key>
+		<string>12</string>
+	</dict>
+	<key>lessonReport</key>
+	<dict>
+		<key>title</key>
+		<string>lessons</string>
+		<key>component</key>
+		<string>LessonReport</string>
+		<key>sort</key>
+		<string>12</string>
+	</dict>
+	<key>selectTeacher</key>
+	<dict>
+		<key>title</key>
+		<string>Выберите учителя</string>
+		<key>style</key>
+		<string>min-width:20em</string>
+		<key>presenter</key>
+		<string>TeacherSelector</string>
+		<key>takeValuesFromRequest</key>
+		<true/>
+		<key>invokeAction</key>
+		<true/>
+		<key>presenterBindings</key>
+		<dict>
+			<key>selection</key>
+			<string>.</string>
+			<key>useAjaxPost</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>notMoreXwords</key>
+	<string>Можно использовать не более %d слов</string>
+	<key>newLesson</key>
+	<string>Новый урок</string>
+	<key>dateAndThemeRequired</key>
+	<string>Для создания нового урока необходимо указать дату проведения и тему урока</string>
+	<key>notInTab</key>
+	<string>Указанная дата не попадает в текущий диапазон. &lt;br/&gt; Перейдите на соответствующую закладку (справа) и попробуйте еще раз.</string>
+	<key>notInEduYear</key>
+	<string>Указанная дата не попадает в учебный год</string>
+	<key>Ticker</key>
+	<dict>
+		<key>selection</key>
+		<string>Выделение</string>
+		<key>All</key>
+		<string>Все</string>
+		<key>None</key>
+		<string>Ничего</string>
+		<key>selectAll</key>
+		<string>Выбрать все</string>
+		<key>selectNone</key>
+		<string>Снять все</string>
+		<key>Invert</key>
+		<string>Инвертировать</string>
+	</dict>
+	<key>allTeachers</key>
+	<string>Все учителя</string>
+	<key>SettingsBase</key>
+	<dict>
+		<key>duplicateByCourse</key>
+		<string>Указанная настройка уже существует</string>
+		<key>byCourse</key>
+		<string>Привязка</string>
+		<key>default</key>
+		<string>Для всех курсов</string>
+		<key>unspecified</key>
+		<string>(все)</string>
+	</dict>
+</dict>
+</plist>

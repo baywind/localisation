@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CoursesReport</key>
+	<dict>
+		<key>title</key>
+		<string>Отчеты по курсам</string>
+		<key>availableReports</key>
+		<string>Доступные отчеты</string>
+		<key>defaultDisplay</key>
+		<dict>
+			<key>subject</key>
+			<dict>
+				<key>title</key>
+				<string>Предмет</string>
+				<key>titlePath</key>
+				<string>subjectWithComment</string>
+				<key>escapeHTML</key>
+				<false/>
+				<key>onclick</key>
+				<string>$session.tryLoad</string>
+				<key>disabled</key>
+				<string>$session.readAccess._read.itemRow</string>
+				<key>nextPage</key>
+				<string>LessonNoteEditor</string>
+				<key>pageParams</key>
+				<dict>
+					<key>course</key>
+					<string>.</string>
+				</dict>
+				<key>exportDict</key>
+				<dict>
+					<key>subParams</key>
+					<array>
+						<dict>
+							<key>title</key>
+							<string>Предмет</string>
+							<key>titlePath</key>
+							<string>cycle.subject</string>
+						</dict>
+						<dict>
+							<key>title</key>
+							<string>()</string>
+							<key>titlePath</key>
+							<string>comment</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>teacher</key>
+			<dict>
+				<key>title</key>
+				<string>Преподаватель</string>
+				<key>keyPath</key>
+				<string>teacher</string>
+				<key>presenter</key>
+				<string>PersonDisplay</string>
+				<key>presenterBindings</key>
+				<dict>
+					<key>person</key>
+					<string>.</string>
+					<key>last</key>
+					<string>2</string>
+					<key>first</key>
+					<string>1</string>
+					<key>second</key>
+					<string>1</string>
+				</dict>
+			</dict>
+			<key>eduGroup</key>
+			<dict>
+				<key>title</key>
+				<string>Класс</string>
+				<key>keyPath</key>
+				<string>eduGroup.name</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>CustomReport</key>
+	<dict>
+		<key>title</key>
+		<string>Выборки</string>
+		<key>available</key>
+		<string>Доступные выборки</string>
+		<key>queryParameters</key>
+		<string>Параметры запроса</string>
+		<key>displayAttributes</key>
+		<string>Поля таблицы результатов</string>
+		<key>countTitle</key>
+		<string>Кол-во</string>
+		<key>resultsSetup</key>
+		<string>Настройка таблицы</string>
+		<key>newQuery</key>
+		<string>Новый запрос</string>
+		<key>nothingFound</key>
+		<string>По Вашему запросу ничего не найдено</string>
+		<key>perform</key>
+		<string>Искать</string>
+	</dict>
+	<key>regimeGroup</key>
+	<dict>
+		<key>title</key>
+		<string>Статистика</string>
+		<key>hover</key>
+		<string>Агрегирующие данные отчеты</string>
+		<key>id</key>
+		<string>report</string>
+		<key>sort</key>
+		<string>30</string>
+	</dict>
+	<key>regimes</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>По курсам</string>
+			<key>component</key>
+			<string>CoursesReport</string>
+			<key>group</key>
+			<string>report</string>
+			<key>sort</key>
+			<string>20</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Выборки</string>
+			<key>component</key>
+			<string>CustomReport</string>
+			<key>group</key>
+			<string>report</string>
+			<key>sort</key>
+			<string>10</string>
+		</dict>
+	</array>
+	<key>export</key>
+	<string>Файл</string>
+	<key>choose</key>
+	<string>Выбрать</string>
+</dict>
+</plist>

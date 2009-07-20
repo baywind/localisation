@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>РУЖЭЛЬ</string>
+	<key>login</key>
+	<dict>
+		<key>descript</key>
+		<string>&lt;span style=&quot;white-space:nowrap;&quot;&gt;Электронная система&lt;/span&gt; классных Журналов &lt;span style=&quot;white-space:nowrap;&quot;&gt;на Русском языке&lt;/span&gt;</string>
+		<key>username</key>
+		<string>Имя</string>
+		<key>password</key>
+		<string>Пароль</string>
+		<key>wait</key>
+		<string>ждите</string>
+		<key>seconds</key>
+		<string>секунд</string>
+		<key>Enter</key>
+		<string>Вход</string>
+		<key>Guest</key>
+		<string>Гость</string>
+		<key>photo</key>
+		<string>фото С.Н.Щербакова</string>
+		<key>copy</key>
+		<string>Геннадий &amp;amp; Михаил Кушнир</string>
+	</dict>
+	<key>ChooseRegime</key>
+	<dict>
+		<key>SrcMark</key>
+		<string>Журналы</string>
+		<key>defaultRegimes</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Контроль успеваемости</string>
+				<key>component</key>
+				<string>Overview</string>
+				<key>hover</key>
+				<string>просмотр, распечатка и рассылка отметок</string>
+				<key>group</key>
+				<string>edu</string>
+				<key>sort</key>
+				<string>10</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Управление</string>
+				<key>component</key>
+				<string>AdminPage</string>
+				<key>hover</key>
+				<string>панель управления и настройки РУЖЭЛЬ</string>
+				<key>group</key>
+				<string>other</string>
+				<key>sort</key>
+				<string>90</string>
+			</dict>
+		</array>
+		<key>regimeGroups</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Учебная часть</string>
+				<key>sort</key>
+				<string>10</string>
+				<key>id</key>
+				<string>edu</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Разное</string>
+				<key>hover</key>
+				<string>Режимы, не вошедшие в другие группы</string>
+				<key>id</key>
+				<string>other</string>
+				<key>sort</key>
+				<string>90</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>Выбор Режима</string>
+		<key>notice</key>
+		<string>Простой пароль &amp;mdash; подарок хакеру</string>
+		<key>today</key>
+		<string>Сегодня</string>
+	</dict>
+	<key>SrcMark</key>
+	<dict>
+		<key>title</key>
+		<string>Выбор журнала</string>
+		<key>tabs</key>
+		<array>
+			<string>Классы</string>
+			<string>Учителя</string>
+		</array>
+	</dict>
+	<key>LessonNoteEditor</key>
+	<dict>
+		<key>right</key>
+		<string>Только оценки</string>
+		<key>left</key>
+		<string>Только уроки</string>
+		<key>normal</key>
+		<string>Стандартный вид</string>
+		<key>byTeacher</key>
+		<string>Журналы этого учителя</string>
+		<key>byEduGroup</key>
+		<string>Журналы этого класса</string>
+		<key>addTab</key>
+		<string>Установить закладку</string>
+		<key>removeTab</key>
+		<string>Снять закладку</string>
+	</dict>
+	<key>Overview</key>
+	<dict>
+		<key>defaultReporter</key>
+		<dict>
+			<key>component</key>
+			<string>StudentReporter</string>
+			<key>hover</key>
+			<string>Текущие оценки за указанный период</string>
+			<key>sort</key>
+			<string>1</string>
+			<key>title</key>
+			<string>Текущие</string>
+			<key>winTitle</key>
+			<string>Текущая успеваемость</string>
+			<key>id</key>
+			<string>recentMarks</string>
+		</dict>
+		<key>showMarks</key>
+		<string>Показать оценки</string>
+		<key>tabs</key>
+		<array>
+			<string>Предметы</string>
+			<string>Ученики</string>
+		</array>
+		<key>title</key>
+		<string>Контроль успеваемости</string>
+	</dict>
+	<key>PrintReport</key>
+	<dict>
+		<key>parent</key>
+		<string>Подпись родителя</string>
+		<key>title</key>
+		<string>Оценки</string>
+		<key>marks</key>
+		<string> оценки</string>
+		<key>tutor</key>
+		<string>Подпись классного руководителя:</string>
+	</dict>
+	<key>messages</key>
+	<dict>
+		<key>areYouShure</key>
+		<string>Вы уверены, что хотите %s?</string>
+		<key>cantDelete</key>
+		<string>Невозможно удалить</string>
+		<key>createNew</key>
+		<string>Создать нового</string>
+		<key>error</key>
+		<string>Произошла ошибка</string>
+		<key>errorInModule</key>
+		<string>Ошибка в модуле </string>
+		<key>illegalFormat</key>
+		<string>Неверный формат </string>
+		<key>invalidNegativeValue</key>
+		<string>Значение %s не может быть отрицательным</string>
+		<key>invalidValue</key>
+		<string>Неверное значение параметра %s</string>
+		<key>invalidZeroValue</key>
+		<string>Значение %s не может быть нулем</string>
+		<key>longString</key>
+		<string>Слишком длинный текст в поле &quot;%1$s&quot;, поддерживается не более %2$d</string>
+		<key>noAccess</key>
+		<string>Недостаточно прав доступа</string>
+		<key>nothingFound</key>
+		<string>По вашему запросу ничего не найдено, попробуйте задействовать меньше параметров</string>
+		<key>nullProhibit</key>
+		<string>Поле &quot;%s&quot; не может быть пустым</string>
+		<key>parameterRequired</key>
+		<string>Необходимо указать &quot;%s&quot;</string>
+		<key>pleaseWait</key>
+		<string>Пожалуйста подождите</string>
+		<key>refusingSessions</key>
+		<string>РУЖЕЛЬ просит Вас закончить работу и нажать &quot;Выход&quot;. &lt;br/&gt;Ждем Вас сразу после завершения технических работ</string>
+		<key>unsavedChanges</key>
+		<string>Несохраненные изменения будут потеряны</string>
+		<key>unavailableYearlyDb</key>
+		<string>Для выбранного учебного года %1$s нет базы данных.</string>
+	</dict>
+	<key>ErrorPages</key>
+	<dict>
+		<key>Error</key>
+		<string>Ошибка</string>
+		<key>exceptionMessage</key>
+		<string>Произошла непредвиденная ошибка. &lt;br&gt; Информация о ней будет занесена в журнал.&lt;br&gt; Вы можете помочь локализовать ее и исправить, если опишете, что вы делали сейчас, и чем ваши действия могли отличаться от того, что вы обычно делаете.</string>
+		<key>recomendations</key>
+		<string>Если ошибка повторяется - попробуйте выйти из журнала и войти снова.&lt;br&gt;Если и это не помогает, обязательно сообщите об ошибке ответственному лицу.</string>
+		<key>showDetails</key>
+		<string>Показать детальную информацию</string>
+		<key>noAccessTitle</key>
+		<string>Нет доступа</string>
+		<key>accessDenied</key>
+		<string>Извините, Вам запрещен доступ.</string>
+		<key>sessionTitle</key>
+		<string>Нет сессии</string>
+		<key>SessionRestorationError</key>
+		<string>Невозможно восстановить подключение.&lt;br&gt;Возможно, Вы уже вышли из приложения, либо выход был осуществлен автоматически по таймеру. &lt;br&gt;В следующий раз обратите внимание на таймер у кнопки &quot;Выход&quot;</string>
+		<key>SessionCreationError</key>
+		<string>Не удается создать сессию. Сообщите об этой ошибке администаратоу.</string>
+		<key>PageRestorationError</key>
+		<string>Невозможно отобразить страницу.&lt;br&gt;Возможно, Вы слишком много раз нажимали кнопку &quot;Назад&quot;.&lt;br&gt;Использование кнопки &quot;Назад&quot; браузера не рекомендуется - пожалуйста, используйте кнопки навигации на странице.</string>
+		<key>autoRedirect</key>
+		<string>Вы будете автоматически перенаправлены через</string>
+		<key>manualRedirect</key>
+		<string>Если перенаправление не происходит, нажмите здесь</string>
+	</dict>
+	<key>AdminPage</key>
+	<dict>
+		<key>maintenance</key>
+		<dict>
+			<key>title</key>
+			<string>Системные процедуры</string>
+			<key>component</key>
+			<string>Maintenance</string>
+		</dict>
+		<key>title</key>
+		<string>Центр управления</string>
+	</dict>
+</dict>
+</plist>
