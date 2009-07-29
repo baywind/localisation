@@ -36,6 +36,10 @@
 		<string>Каникулы и праздники</string>
 		<key>listName</key>
 		<string>График</string>
+		<key>plan</key>
+		<string>по плану</string>
+		<key>total</key>
+		<string>сумма</string>
 	</dict>
 	<key>EduPeriod</key>
 	<dict>
@@ -54,7 +58,7 @@
 		<key>weeksDays</key>
 		<string>недель (дней)</string>
 	</dict>
-	<key>GlobalPlan</key>
+	<key>EduPlan</key>
 	<string>Учебный план </string>
 	<key>SetupPeriods</key>
 	<dict>
@@ -70,6 +74,10 @@
 		<string>Показать подробности</string>
 		<key>listsOverview</key>
 		<string>Список учебных графиков</string>
+		<key>week</key>
+		<string>цикл</string>
+		<key>days</key>
+		<string>дней</string>
 		<key>choosePeriod</key>
 		<dict>
 			<key>title</key>
@@ -92,22 +100,34 @@
 	<key>planTabs</key>
 	<array>
 		<dict>
-			<key>page</key>
+			<key>component</key>
 			<string>GlobalPlan</string>
 			<key>title</key>
 			<string>Общий план</string>
+			<key>pageTitle</key>
+			<string>Учебный план</string>
+			<key>resourcesFramework</key>
+			<string>RujelEduPlan</string>
+			<key>cssResource</key>
+			<string>EduPlan.css</string>
+			<key>sort</key>
+			<string>10</string>
 		</dict>
 		<dict>
-			<key>page</key>
+			<key>component</key>
 			<string>SetupPeriods</string>
 			<key>title</key>
 			<string>Учебные Периоды</string>
+			<key>sort</key>
+			<string>20</string>
 		</dict>
 		<dict>
-			<key>page</key>
+			<key>component</key>
 			<string>PlanDetails</string>
 			<key>title</key>
 			<string>Детализация плана</string>
+			<key>sort</key>
+			<string>30</string>
 		</dict>
 	</array>
 	<key>planRegime</key>
@@ -115,7 +135,7 @@
 		<key>title</key>
 		<string>Учебный План</string>
 		<key>component</key>
-		<string>GlobalPlan</string>
+		<string>EduPlan</string>
 		<key>group</key>
 		<string>edu</string>
 		<key>sort</key>
