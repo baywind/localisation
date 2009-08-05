@@ -8,3 +8,9 @@ for f in */Resources/*.plist ; do
 	cp -f $f $LOCALISATION/$NEWNAME
 	echo $NEWNAME
 done
+
+for f in */Resources/*.html ; do
+	NEWNAME=`echo $f | sed "s/\/Resources\//_/g"`
+	cp -f $f $LOCALISATION/$NEWNAME
+	echo $NEWNAME
+done
