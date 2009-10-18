@@ -56,14 +56,14 @@
 			<string>Автовыставление</string>
 			<key>flags</key>
 			<dict>
-				<key>active</key>
-				<string>активен</string>
-				<key>manual</key>
-				<string>вручную</string>
 				<key>noTimeouts</key>
-				<string>нет отсрочек</string>
-				<key>priority</key>
-				<string>приоритет</string>
+				<string>запретить отсрочки</string>
+				<key>manual</key>
+				<string>разрешить изменять вручную</string>
+				<key>inactive</key>
+				<string>деактивировать</string>
+				<key>hideInReport</key>
+				<string>не показывать в распечатке</string>
 			</dict>
 		</dict>
 		<key>Prognosis</key>
@@ -137,6 +137,14 @@
 		<string>Оценка была повышена</string>
 		<key>bonus</key>
 		<string>Бонус</string>
+		<key>autoItogSetup</key>
+		<string>Настройка прогноза</string>
+		<key>formulaTitle</key>
+		<string>Вычислять по формуле</string>
+		<key>bsetTitle</key>
+		<string>Преобразовать проценты</string>
+		<key>noBSet</key>
+		<string>оставить %</string>
 	</dict>
 	<key>reportSettings</key>
 	<dict>
@@ -171,6 +179,8 @@
 	</dict>
 	<key>none</key>
 	<string>нет</string>
+	<key>manual</key>
+	<string>вручную</string>
 	<key>calculators</key>
 	<array>
 		<dict>
@@ -179,7 +189,7 @@
 			<key>description</key>
 			<string>усреднение интегральных оценок по работам</string>
 			<key>className</key>
-			<string>net.rujel.autoitog.BachalaureatCalculator</string>
+			<string>net.rujel.autoitog.IntegralCalculator</string>
 		</dict>
 		<dict>
 			<key>title</key>
