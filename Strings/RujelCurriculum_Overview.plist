@@ -365,7 +365,7 @@
 						<key>title</key>
 						<string>Причина</string>
 						<key>titlePath</key>
-						<string>reason</string>
+						<string>title</string>
 					</dict>
 				</dict>
 			</array>
@@ -538,6 +538,16 @@
 				</dict>
 				<dict>
 					<key>title</key>
+					<string>Вместо</string>
+					<key>keyPath</key>
+					<string>getPaired.course</string>
+					<key>escapeHTML</key>
+					<false/>
+					<key>titlePath</key>
+					<string>subjectWithComment</string>
+				</dict>
+				<dict>
+					<key>title</key>
 					<string>Причина</string>
 					<key>keyPath</key>
 					<string>reason</string>
@@ -547,13 +557,15 @@
 					<dict>
 						<key>reason</key>
 						<string>.</string>
+						<key>refTeacher</key>
+						<string>$itemRow.course.teacher</string>
 					</dict>
 					<key>exportDict</key>
 					<dict>
 						<key>title</key>
 						<string>Причина</string>
 						<key>titlePath</key>
-						<string>reason</string>
+						<string>title</string>
 					</dict>
 				</dict>
 			</array>
