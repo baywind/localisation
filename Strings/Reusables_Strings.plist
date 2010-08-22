@@ -116,6 +116,8 @@
 	<dict>
 		<key>Add</key>
 		<string>Добавить</string>
+		<key>Archive</key>
+		<string>Архивировать</string>
 		<key>Back</key>
 		<string>Назад</string>
 		<key>Cancel</key>
@@ -146,6 +148,8 @@
 		<string>Подтвердить</string>
 		<key>Select</key>
 		<string>Выбрать</string>
+		<key>OK</key>
+		<string>Ага</string>
 	</dict>
 </dict>
 </plist>
