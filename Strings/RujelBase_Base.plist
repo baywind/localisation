@@ -166,6 +166,20 @@
 			</dict>
 			<dict>
 				<key>attribute</key>
+				<string>comment</string>
+				<key>cellClass</key>
+				<string>highlight</string>
+				<key>cellStyle</key>
+				<string>border: solid 1px #cc9966; margin: 1px 2px; padding: 0px 2px; font-style:italic;</string>
+				<key>qualifierSelector</key>
+				<string>caseInsensitiveLike</string>
+				<key>sort</key>
+				<integer>45</integer>
+				<key>title</key>
+				<string>Комментарий курса</string>
+			</dict>
+			<dict>
+				<key>attribute</key>
 				<string>teacher</string>
 				<key>cellClass</key>
 				<string>female</string>
@@ -290,6 +304,8 @@
 	<string>Запись уроков вперед запрещена</string>
 	<key>lessons</key>
 	<string>Уроки</string>
+	<key>skipChars</key>
+	<string>нНоОHoO</string>
 	<key>lessonsTab</key>
 	<dict>
 		<key>checkAccess</key>
@@ -499,5 +515,53 @@
 	</array>
 	<key>vacant</key>
 	<string>Вакансия</string>
+	<key>import</key>
+	<dict>
+		<key>Import</key>
+		<string>Импорт</string>
+		<key>uploadFile</key>
+		<string>Укажите файл с данными</string>
+		<key>inputSettings</key>
+		<string>Параметры файла данных</string>
+		<key>charset</key>
+		<string>Кодировка</string>
+		<key>separator</key>
+		<string>Разделитель</string>
+		<key>goManual</key>
+		<string>Параметры файла</string>
+		<key>charsets</key>
+		<array>
+			<string>UTF-8</string>
+			<string>windows-1251</string>
+			<string>KOI8-R</string>
+			<string>x-MacCyrillic</string>
+		</array>
+	</dict>
+	<key>archiveType</key>
+	<array>
+		<dict>
+			<key>entityName</key>
+			<string>BaseNote</string>
+			<key>title</key>
+			<string>Метка</string>
+			<key>course</key>
+			<dict>
+				<key>fromKey</key>
+				<string>lesson</string>
+				<key>fromEntity</key>
+				<string>EduLesson</string>
+			</dict>
+			<key>grouping</key>
+			<string>student</string>
+		</dict>
+		<dict>
+			<key>entityName</key>
+			<string>BaseLesson</string>
+			<key>title</key>
+			<string>Урок</string>
+			<key>course</key>
+			<string>course</string>
+		</dict>
+	</array>
 </dict>
 </plist>

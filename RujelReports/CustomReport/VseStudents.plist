@@ -32,6 +32,8 @@
 					<string>.</string>
 					<key>width</key>
 					<string>100%</string>
+					<key>showSection</key>
+					<true/>
 				</dict>
 				<key>style</key>
 				<string>min-width:8em</string>
@@ -317,7 +319,7 @@
 			<string>student.person.sex</string>
 			<key>title</key>
 			<string>Пол</string>
-			<key>value</key>
+			<key>itemValue</key>
 			<dict>
 				<key>cacheResult</key>
 				<true/>
@@ -351,7 +353,7 @@
 			<string>student.person.birthDate</string>
 			<key>title</key>
 			<string>Возраст</string>
-			<key>value</key>
+			<key>itemValue</key>
 			<dict>
 				<key>cacheResult</key>
 				<true/>

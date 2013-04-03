@@ -10,11 +10,11 @@
 	<string>не удалось создать папку для архива</string>
 	<key>newWindow</key>
 	<string>печать</string>
-	<key>byClass</key>
+	<key>eduGroup</key>
 	<string>по классам</string>
-	<key>bySubject</key>
+	<key>cycle</key>
 	<string>по предметам</string>
-	<key>byTeacher</key>
+	<key>teacher</key>
 	<string>по учителям</string>
 	<key>stateTitle</key>
 	<string>режим закрытия</string>
@@ -34,6 +34,22 @@
 	<string>Выполняется</string>
 	<key>progress</key>
 	<string>Состояние</string>
+	<key>totalGroups</key>
+	<string>Всего групп</string>
+	<key>students</key>
+	<string>Учащихся</string>
+	<key>pedsovetSection</key>
+	<string>Настройка графы "Решение педсовета"</string>
+	<key>pedsovet</key>
+	<string>Решение педсовета</string>
+	<key>decision</key>
+	<string>переведен[|а] в %d класс</string>
+	<key>pedsovetTitle</key>
+	<string>Заголовок решения</string>
+	<key>decisionTitle</key>
+	<string>Типовое решение</string>
+	<key>noDecision</key>
+	<string>Нет решения</string>
 	<key>messages</key>
 	<dict>
 		<key>closingTitle</key>
@@ -73,7 +89,7 @@
 	<key>dashboard</key>
 	<dict>
 		<key>title</key>
-		<string>Закрытие учебного года</string>
+		<string>Закрытие года (уроки, работы)</string>
 		<key>component</key>
 		<string>DisplayAny</string>
 		<key>invokeAction</key>
@@ -106,7 +122,7 @@
 			<key>onmouseout</key>
 			<string>unDim(this);</string>
 			<key>title</key>
-			<string>Закрытие учебного года</string>
+			<string>Закрытие года (уроки, работы)</string>
 			<key>height</key>
 			<string>38</string>
 			<key>width</key>
@@ -136,7 +152,7 @@
 		<key>width</key>
 		<string>24</string>
 		<key>title</key>
-		<string>Закрытие года</string>
+		<string>Закрытие года (учащиеся)</string>
 		<key>sort</key>
 		<string>90</string>
 	</dict>

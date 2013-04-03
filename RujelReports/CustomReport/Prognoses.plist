@@ -165,6 +165,8 @@
 					<string>.</string>
 					<key>width</key>
 					<string>100%</string>
+					<key>showSection</key>
+					<true/>
 				</dict>
 				<key>style</key>
 				<string>min-width:8em</string>
@@ -267,6 +269,16 @@
 			</dict>
 			<key>title</key>
 			<string>Предметная область</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>исключить помеченные "не выставлять"</string>
+			<key>qualifierFormat</key>
+			<string>flags &lt; 64</string>
+			<key>title</key>
+			<string>Только активные</string>
+			<key>active</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -544,8 +556,10 @@
 			<string>CompareDescending</string>
 			<key>hover</key>
 			<string>Процент выполненых работ (выставленых оценок)</string>
+			<key>keyPath</key>
+			<string>complete</string>
 			<key>itemHover</key>
-			<string>$itemRow.complete</string>
+			<string>.</string>
 			<key>presenterBindings</key>
 			<dict>
 				<key>numberformat</key>
@@ -555,12 +569,12 @@
 			<string>65</string>
 			<key>title</key>
 			<string>Выполнено</string>
-			<key>value</key>
+			<key>itemValue</key>
 			<dict>
 				<key>methodName</key>
 				<string>movePointRight</string>
 				<key>object</key>
-				<string>.complete</string>
+				<string>.</string>
 				<key>paramClasses</key>
 				<array>
 					<string>int</string>
@@ -641,6 +655,32 @@
 			<string>Выставленная итоговая отметка</string>
 			<key>titlePath</key>
 			<string>mark</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Соответствие итога прогнозу</string>
+			<key>short</key>
+			<string>&amp;lt; &amp;gt;</string>
+			<key>active</key>
+			<false/>
+			<key>sort</key>
+			<string>81</string>
+			<key>style</key>
+			<string>text-align:center;font-weight:bold;color:#ff0000;</string>
+			<key>keyPath</key>
+			<string>itogDiffers</string>
+			<key>presenterBindings</key>
+			<dict>
+				<key>value</key>
+				<string>'#</string>
+			</dict>
+			<key>wrapper</key>
+			<string>WOConditional</string>
+			<key>wrapperBindings</key>
+			<dict>
+				<key>condition</key>
+				<string>.</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>active</key>
